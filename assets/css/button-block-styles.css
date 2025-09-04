@@ -1,0 +1,4 @@
+.wp-block-button.is-style-psv-primary .wp-block-button__link {
+  background-color: red !important;
+  border-radius: 10px;
+}
