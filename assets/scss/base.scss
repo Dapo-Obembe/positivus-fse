@@ -1,0 +1,14 @@
+@use "./abstracts/mixins" as *;
+//--------------------------------------
+// Add padding to Group blocks with alignfull
+//-------------------------------------
+*.alignfull:not(.entry-content) {
+  @include tablet {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  @include mobile {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}

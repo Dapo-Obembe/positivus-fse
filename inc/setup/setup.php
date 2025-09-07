@@ -102,7 +102,12 @@ if( ! function_exists( 'psv_pattern_categories' ) ) {
 if( ! function_exists( 'psv_register_block_styles' ) ) {
 	function psv_register_block_styles() {
 		// 1. Register the stlysheet for block styles.
-		wp_register_style('psv-button-styles', get_template_directory_uri() . '/assets/css/button-block-styles.css', array(), filemtime( get_template_directory() . '/assets/css/button-block-styles.css' ) );
+		// wp_register_style(
+		// 	'psv-button-styles',
+		// 	get_stylesheet_directory_uri() . '/assets/css/button-block-styles.css',
+		// 	array(),
+		// 	filemtime( get_stylesheet_directory() . '/assets/css/button-block-styles.css', )
+		// );
 
 		// 2. Register a new block style for the core/button block.
 		register_block_style(

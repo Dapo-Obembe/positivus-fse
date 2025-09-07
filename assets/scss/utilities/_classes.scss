@@ -1,0 +1,23 @@
+//-------------------------------
+// Class names for backend usage
+// 1. Show and Hide on Mobile and Desktop
+// 2. Overflow
+//-----------------------------
+.hide-desktop {
+  @media (width >= 1025px) {
+    display: none !important;
+  }
+}
+.hide-mobile {
+  @media (width <= 1024px) {
+    display: none !important;
+  }
+}
+
+//--------------
+// 2. Overflow classes
+.overflow-hidden,
+.overflow-y-hidden,
+.overflow-x-hidden {
+  overflow: hidden !important;
+}

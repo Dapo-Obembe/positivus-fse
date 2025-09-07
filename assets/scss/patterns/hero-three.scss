@@ -1,0 +1,38 @@
+@use "../abstracts/mixins" as *;
+
+.awc-hero-section-three {
+  overflow: hidden;
+  &__text-row {
+    @include mobile {
+      flex-wrap: wrap;
+    }
+
+    .title,
+    .description {
+      flex-basis: 100%;
+
+      @include desktop {
+        flex-basis: 50%;
+      }
+    }
+
+    .description {
+      text-align: right;
+    }
+  }
+
+  &__image {
+    min-width: 100% !important;
+    @include mobile {
+      height: 360px;
+    }
+    @include tablet {
+      height: 540px;
+    }
+    img {
+      width: 100%;
+      height: 100% !important;
+      object-fit: cover;
+    }
+  }
+}

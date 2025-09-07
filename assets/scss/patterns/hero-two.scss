@@ -1,0 +1,18 @@
+.awc-hero-section-two {
+  height: 100vh;
+  overflow: hidden;
+  &__container {
+    height: 100%;
+  }
+  &__contentWrapper {
+    min-height: 100%;
+
+    @media (max-width: 1024px) {
+      align-content: flex-end;
+    }
+    .section-title {
+    }
+    .section-description {
+    }
+  }
+}
